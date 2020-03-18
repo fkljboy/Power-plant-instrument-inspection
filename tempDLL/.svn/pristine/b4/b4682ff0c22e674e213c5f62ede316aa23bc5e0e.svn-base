@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\sgApplication">
+      <UniqueIdentifier>{0cc3ae10-33f2-4eac-89bf-8b89c163b39f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\sgCore">
+      <UniqueIdentifier>{67b29331-ff27-4415-9307-6045ee162334}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\sgFunction">
+      <UniqueIdentifier>{e222296c-452e-4449-87ca-22adb5a589a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\sgTask">
+      <UniqueIdentifier>{553a58c9-f354-4d2b-bc68-2430f96827a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\sgApplication">
+      <UniqueIdentifier>{c842a29e-dfd2-4ed3-a931-8337b3454f2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\sgCore">
+      <UniqueIdentifier>{b2fe39c3-98c6-4218-ace0-2322f605adbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\sgFunction">
+      <UniqueIdentifier>{9d73f0bd-17e2-43ef-9154-1d9a3c321f8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\sgTask">
+      <UniqueIdentifier>{aa903c94-6082-4dc6-9b6c-7ab17f62da64}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sgCore\sgcore_def.h">
+      <Filter>头文件\sgCore</Filter>
+    </ClInclude>
+    <ClInclude Include="sgCore\sgcore_log.h">
+      <Filter>头文件\sgCore</Filter>
+    </ClInclude>
+    <ClInclude Include="sgCore\sgcore_math.h">
+      <Filter>头文件\sgCore</Filter>
+    </ClInclude>
+    <ClInclude Include="sgCore\sgcore_platform.h">
+      <Filter>头文件\sgCore</Filter>
+    </ClInclude>
+    <ClInclude Include="sgFunction\sgfunc_feature.h">
+      <Filter>头文件\sgFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="sgFunction\sgfunc_filter.h">
+      <Filter>头文件\sgFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="sgFunction\sgfunc_imageio.h">
+      <Filter>头文件\sgFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="sgFunction\sgfunc_transform.h">
+      <Filter>头文件\sgFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="sgFunction\sgfunc_video.h">
+      <Filter>头文件\sgFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="sgTask\sgtask_knob.h">
+      <Filter>头文件\sgTask</Filter>
+    </ClInclude>
+    <ClInclude Include="sgTask\sgtask_led.h">
+      <Filter>头文件\sgTask</Filter>
+    </ClInclude>
+    <ClInclude Include="sgTask\sgtask_pointer.h">
+      <Filter>头文件\sgTask</Filter>
+    </ClInclude>
+    <ClInclude Include="sgTask\sgtask_analog.h">
+      <Filter>头文件\sgTask</Filter>
+    </ClInclude>
+    <ClInclude Include="sgApplication\sgApplication.h">
+      <Filter>头文件\sgApplication</Filter>
+    </ClInclude>
+    <ClInclude Include="sgTask\sgtask_qrcode.h">
+      <Filter>头文件\sgTask</Filter>
+    </ClInclude>
+    <ClInclude Include="sgFunction\sgfunc_file.h">
+      <Filter>头文件\sgFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="sgFunction\tinyxml2.h">
+      <Filter>头文件\sgFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="sgTask\DealImageUtil.h">
+      <Filter>头文件\sgTask</Filter>
+    </ClInclude>
+    <ClInclude Include="sgTask\ImageDeal.h">
+      <Filter>头文件\sgTask</Filter>
+    </ClInclude>
+    <ClInclude Include="sgCore\sgcore_safetyCheck.h">
+      <Filter>头文件\sgCore</Filter>
+    </ClInclude>
+    <ClInclude Include="sgCore\sgcore_taskinfo.h">
+      <Filter>头文件\sgCore</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="StateGridDLL.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sgTask\sgtask_pointer.cpp">
+      <Filter>源文件\sgTask</Filter>
+    </ClCompile>
+    <ClCompile Include="sgTask\sgtask_knob.cpp">
+      <Filter>源文件\sgTask</Filter>
+    </ClCompile>
+    <ClCompile Include="sgTask\sgtask_analog.cpp">
+      <Filter>源文件\sgTask</Filter>
+    </ClCompile>
+    <ClCompile Include="sgTask\sgtask_led.cpp">
+      <Filter>源文件\sgTask</Filter>
+    </ClCompile>
+    <ClCompile Include="sgFunction\sgfunc_imageio.cpp">
+      <Filter>源文件\sgFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="sgFunction\sgfunc_transform.cpp">
+      <Filter>源文件\sgFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="sgFunction\sgfunc_feature.cpp">
+      <Filter>源文件\sgFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="sgCore\sgcore_log.cpp">
+      <Filter>源文件\sgCore</Filter>
+    </ClCompile>
+    <ClCompile Include="sgApplication\sgApplication.cpp">
+      <Filter>源文件\sgApplication</Filter>
+    </ClCompile>
+    <ClCompile Include="sgTask\sgtask_qrcode.cpp">
+      <Filter>源文件\sgTask</Filter>
+    </ClCompile>
+    <ClCompile Include="sgFunction\sgfunc_file.cpp">
+      <Filter>源文件\sgFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="sgFunction\tinyxml2.cpp">
+      <Filter>源文件\sgFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="sgTask\DealImageUtil.cpp">
+      <Filter>源文件\sgTask</Filter>
+    </ClCompile>
+    <ClCompile Include="sgTask\ImageDeal.cpp">
+      <Filter>源文件\sgTask</Filter>
+    </ClCompile>
+    <ClCompile Include="sgCore\sgcore_safetyCheck.cpp">
+      <Filter>源文件\sgCore</Filter>
+    </ClCompile>
+    <ClCompile Include="sgCore\sgcore_taskinfo.cpp">
+      <Filter>源文件\sgCore</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="StateGridDLL.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

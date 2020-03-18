@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <QRCODE>
+    <startX>309</startX>
+    <startY>452</startY>
+    <width>97</width>
+    <height>85</height>
+    <content>009020000000000000058223</content>
+  </QRCODE>
+  <info>
+    <cabinName>自17 方西 乙</cabinName>
+    <cabinType>出线开关柜</cabinType>
+    <dev_Num>23</dev_Num>
+    <side>FarFace</side>
+    <itemNum>10</itemNum>
+  </info>
+  <device type="2">
+    <name>操作开关</name>
+    <taskinfo>
+      <type>2</type>
+      <subtype>83</subtype>
+      <number>1</number>
+      <order>10</order>
+    </taskinfo>
+    <roiinfo>
+      <startX>616</startX>
+      <startY>655</startY>
+      <distX>307</distX>
+      <distY>203</distY>
+      <width>66</width>
+      <height>83</height>
+    </roiinfo>
+    <unitinfo>
+      <stall>
+        <rangeLow>0</rangeLow>
+        <rangeHigh>100</rangeHigh>
+        <context>试验位置</context>
+      </stall>
+      <stall>
+        <rangeLow>101</rangeLow>
+        <rangeHigh>180</rangeHigh>
+        <context>操作位置</context>
+      </stall>
+    </unitinfo>
+  </device>
+</root>

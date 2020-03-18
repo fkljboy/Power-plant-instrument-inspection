@@ -1,0 +1,20 @@
+1. 工程需要用到的第三方库的配置文件列表如下，需要根据安装目录来配置！！！
+- OPENCV
+	opencv2413_debug_x64
+	opencv2413_debug_x86
+	opencv2413_release_x64
+	opencv2413_release_x86
+- Zbar（二维码检测库）
+	Zbar_Debug_Setting_x64
+	Zbar_Debug_Setting_x86
+- LeakDetector （检测内存泄漏）
+	LeakDetectorx86Debug
+	
+2. 解决方案下有两个工程
+- FunctionTest 测试函数用的
+- StateGridDLL 源码所在工程，用于生成DLL。记住DLL工程只能生成，不能运行。
+
+3. 程序入口
+FunctionTest工程下是main函数
+
+StateGridDLL工程下DLL的接口函数都在StateGridDLL.cpp下。

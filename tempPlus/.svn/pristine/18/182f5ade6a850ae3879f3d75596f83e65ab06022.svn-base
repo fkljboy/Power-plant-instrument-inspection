@@ -1,0 +1,313 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Diagnostics;
+using System.Drawing;
+using System.Linq;
+using System.Reflection;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace DetectGUIPlus
+{
+    public partial class MainWindowSmall : Form
+    {
+        // 实例化一个DLL对象
+        VisionDLL visiondll = new VisionDLL();
+
+        // 实例化一个xml处理的对象
+        XMLProcess xmlProcess = new XMLProcess();
+
+        // 实例化一个ROI数组获取的对象
+        DataFlow dataflow = new DataFlow();
+
+        // 实例化一个数据库操作对象
+        //SQLInterface sqlProcess = new SQLInterface();
+
+        Thread detectThread;
+
+        // 巡检数据表自增序列编号
+        private int detectCount = 0;
+
+        public MainWindowSmall()
+        {
+            InitializeComponent();
+            
+            panelLocationDetail.Hide();
+
+            timerClock_Start(); //启动时钟
+
+            //sqlProcess.connectDatabase();
+        }
+
+        private void MainWindowLoad(object sender, EventArgs e)
+        {
+            // 运行启动界面，此处直接等待，应使用多线程进行资源加载。
+            Welcome myWelcome = new Welcome(1000);
+            myWelcome.ShowDialog();
+
+        }
+
+        // *******************************timerClock 时钟控件相关***********************************
+        private void timerClock_Tick(object sender, EventArgs e)
+        {
+            labelTime.Text = DateTime.Now.ToString("HH:mm");
+            labelSecond.Text = DateTime.Now.ToString("ss");
+            labelDate.Text = DateTime.Now.ToString("yyyy-MM-dd");
+            labelWeek.Text = DateTime.Now.ToString("dddd");
+        }
+
+        public void timerClock_Start()
+        {
+            timerClock.Start();
+        }
+
+        public void timerClock_Stop()
+        {
+            timerClock.Stop();
+        }
+
+        // ******************************* 菜单按钮控件相关 ***************************************** 
+
+
+        private void ExitXToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Glog日志系统主动关闭
+            //visiondll.glogshutdown();
+
+            Application.Exit();
+        }
+
+        // ******************************* 菜单按钮控件相关 ***************************************** 
+
+
+        private void pictureBoxlocation_Click(object sender, EventArgs e)
+        {
+            // 圆形进度条开始
+            //circularProgressBarLocation.Style = ProgressBarStyle.Marquee;
+            //circularProgressBarLocation.MarqueeAnimationSpeed = 30;
+            
+        }
+
+        private string imgPath;
+        private void pictureBoxSource_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.InitialDirectory = "E:\\3-研究生2017~2020\\6-项目\\2017-9-国家电网仪表识别项目-2018-3\\数据";
+            openFileDialog.Filter = "图片文件(*.jpg,*.gif,*.bmp,*.png)|*.jpg;*.gif;*.bmp;*.png";
+            openFileDialog.RestoreDirectory = true;
+            openFileDialog.FilterIndex = 1;
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                String fileName = openFileDialog.FileName;
+                pictureBoxSource.Image = Image.FromFile(fileName);
+                imgPath = fileName;
+            }
+
+            //// 二维码接口测试
+            //int[] xlist = new int[5];
+            //int[] ylist = new int[5];
+            //int[] heightlist = new int[5];
+            //int[] widthlist = new int[5];
+            //string[] contentarray = new string[5];
+            //int qrnum = 0;
+            //visiondll.GetQRcodePositionMulti(imgPath, ref xlist, ref ylist, ref heightlist, ref widthlist, ref contentarray, ref qrnum,DLLDefine.sg_Camera_Far);
+            //if (qrnum != 0)
+            //{
+            //    Console.WriteLine("**************C#**********，共检出：" + qrnum + "个二维码");
+            //    for (int i = 0; i < qrnum; i++)
+            //    {
+            //        Console.WriteLine("第" + i + "个二维码，坐标（" + xlist[i] + "," + ylist[i] + "), 高：" + heightlist[i] + ",宽：" + widthlist[i]);
+            //        Console.WriteLine("内容为：" + contentarray[i]);
+            //    }
+            //}
+        }
+
+        //结合ROI提取和XML配置
+        private void xMLConfigurePluasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            XMLConfigureSmall xmlconfigure = new XMLConfigureSmall();
+            xmlconfigure.ShowDialog();
+        }
+
+
+        // 1.6.1 巡检数据栏的表格添加
+        private void detectResultSave(string cabinet, string device, string result, string alert, string detectClass)
+        {
+            string date = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+
+            // 1. 填充至表格,并自动
+            detectCount++;
+            dataGridViewDetect.Rows.Add(detectCount, date, cabinet + "-" + device, result, alert);
+            dataGridViewDetect.FirstDisplayedScrollingRowIndex = dataGridViewDetect.RowCount - 1;   // 自动显示最新的数据
+
+            // 2. 保存至数据库
+            //sqlProcess.insertRecord(room, cabinet, device, detectClass, result, alert, date);
+        }
+
+        //*********************1.5 主界面：检测进度百分比控件和进度信息标签********************************
+        private void processUpdateUI(int detectNow, int detectSize)
+        {
+            circularProgressBarprocess.Value = (int)(detectNow * 1.0 / detectSize * 100);
+            circularProgressBarprocess.Text = circularProgressBarprocess.Value.ToString() + "%";
+            labelbarprocess.Text = "检测进度：" + detectNow.ToString() + " / " + detectSize.ToString();
+        }
+
+        // 延时
+        private void Delay(int mm)
+        {
+            DateTime current = DateTime.Now;
+            while (current.AddMilliseconds(mm) > DateTime.Now)
+            {
+                Application.DoEvents();
+            }
+            return;
+        }
+
+        private void buttonLookUp_Click(object sender, EventArgs e)
+        {
+            string xmlpath = null;
+
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.InitialDirectory = DLLDefine.XMLFolder;
+            openFileDialog.Filter = "配置文件(*.xml)|*.xml";
+            openFileDialog.RestoreDirectory = true;
+            openFileDialog.FilterIndex = 1;
+
+            // 1. 读取XML
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                if (openFileDialog.FileName.Equals(null))
+                {
+                    MessageBox.Show("文件路径为空");
+                    return;
+                }
+                xmlpath = openFileDialog.FileName;
+            }
+            else
+            {
+                MessageBox.Show("文件路径为空");
+                return;
+            }
+
+            drawXML(xmlpath);
+        }
+
+        private void drawXML(string xmlpath)
+        {
+            // 1. 获取电柜信息，更新到UI ,此处可以另开线程
+            string cabinName = null, cabinType = null, dev_Num = null, side = null;
+
+            xmlProcess.XMLtoCabinInfo(xmlpath, ref cabinName, ref cabinType, ref dev_Num, ref side);
+
+            labelRom.Text = cabinName;
+            labelCab.Text = cabinType;
+            labelFac.Text = side;
+            labelDevNum.Text = dev_Num;
+
+
+            // 1.2 进行绘图然后查看确认
+            string roiPath= "";
+            visiondll.drawROIforCheck(imgPath, xmlpath, ref roiPath);
+
+            pictureBoxProcessed.Image = Image.FromFile(roiPath);
+
+        }
+
+        private void buttonTestPic_Click(object sender, EventArgs e)
+        {
+            int Num = Convert.ToInt16(comboBoxPicNum.SelectedItem.ToString());
+            int Updown = Convert.ToInt16(comboBoxUpdown.SelectedItem.ToString().Equals("上侧") ? 1 : 2);
+
+            string[] contentArr = new string[20];
+
+            visiondll.DetectWithXML(Num, Updown, ref contentArr);
+
+            Console.WriteLine(contentArr[0]);
+
+            dataGridViewStatus.Rows.Clear();
+
+            for (int i = 0; i < contentArr.Length; i++)
+            {
+                //UI 结果显示 小表格（仪表名称和检测结果），显示语义，调用自身类的转换功能实现数据到语义的转换
+                dataGridViewStatus.Rows.Add(i+1, contentArr[i]);
+            }
+
+            try
+            {
+                imgPath = "设备元素照片/Dev_" + Num.ToString() + "_ROI.jpg";
+
+                pictureBoxProcessed.Image = Image.FromFile(imgPath);
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("图片不存在");
+            }
+        }
+
+        private void comboBoxPicNum_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int Num = Convert.ToInt16(comboBoxPicNum.SelectedItem.ToString());
+            int Updown = Convert.ToInt16(comboBoxUpdown.SelectedItem.ToString().Equals("上侧") ? 1 : 2);
+            
+            imgPath = "设备图片/Dev" + Num.ToString() + "_" + Updown.ToString()+ ".jpg";
+
+            pictureBoxSource.Image = Image.FromFile(imgPath);
+        }
+
+        private void comboBoxUpdown_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int Num = Convert.ToInt16(comboBoxPicNum.SelectedItem.ToString());
+            int Updown = Convert.ToInt16(comboBoxUpdown.SelectedItem.ToString().Equals("上侧") ? 1 : 2);
+
+            imgPath = "设备图片/Dev" + Num.ToString() + "_" + Updown.ToString() + ".jpg";
+
+            pictureBoxSource.Image = Image.FromFile(imgPath);
+        }
+
+        private void buttonloopTest_Click(object sender, EventArgs e)
+        {
+
+            // Glog日志系统主动初始化
+            visiondll.glogint(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName);
+            loopTest();
+            visiondll.glogshutdown();
+        }
+
+        void loopTest()
+        {
+            int times = (int)numericUpDownloopTime.Value;
+            int Number = 36;
+            for (int i = 0; i < times; i++)
+            {
+                for (int Num = 1; Num < Number; Num++)
+                {
+                    for (int Updown = 1; Updown <= 2; Updown++)
+                    {
+                        string[] contentArr = new string[20];
+
+                        visiondll.DetectWithXML(Num, Updown, ref contentArr);
+
+                        dataGridViewStatus.Rows.Clear();
+
+                        Console.WriteLine("一次检测结束**************************************************************************");
+                        Console.WriteLine("一次检测结束**************************************************************************");
+
+                        Thread.Sleep(1000);
+                    }
+
+                }
+            }
+        }
+
+
+
+    }
+
+
+
+    }

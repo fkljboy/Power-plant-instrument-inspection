@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <QRCODE>
+    <startX>419</startX>
+    <startY>739</startY>
+    <width>91</width>
+    <height>87</height>
+    <content>009020000000000000058216</content>
+  </QRCODE>
+  <info>
+    <cabinName>10kV二（1）段 压变/避雷器</cabinName>
+    <cabinType>压变/避雷器柜</cabinType>
+    <dev_Num>16</dev_Num>
+    <side>FarFace</side>
+    <itemNum>4</itemNum>
+  </info>
+</root>

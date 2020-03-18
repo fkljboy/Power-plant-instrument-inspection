@@ -1,0 +1,47 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace DetectGUIPlus
+{
+    public partial class WarningDialog : Form
+    {
+        // 方式一：默认
+        public WarningDialog()
+        {
+            InitializeComponent();
+        }
+
+        // 方式二：提示文字
+        public WarningDialog(string message)
+        {
+            InitializeComponent();
+            labelMessage.Text = message;
+        }
+
+        // 方式三：提示文字+图像内容
+        public WarningDialog(string message, string picpath)
+        {
+            InitializeComponent();
+            labelMessage.Text = message;
+            pictureBoxIcon.Image = Image.FromFile(picpath);
+        }
+
+        private void resultOKdialog_Load(object sender, EventArgs e)
+        {
+            bunifuFormFadeTransition.ShowAsyc(this);
+        }
+
+        private void bunifuThinButton21_Click_1(object sender, EventArgs e)
+        {
+            //bunifuFormFadeTransition.HideAsyc(this, true);  // true to close the form after transition.
+            this.Close();
+        }
+    }
+}

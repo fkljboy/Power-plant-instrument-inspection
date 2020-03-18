@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <QRCODE>
+    <startX>429</startX>
+    <startY>512</startY>
+    <width>84</width>
+    <height>91</height>
+    <content>009020000000000000058260</content>
+  </QRCODE>
+  <info>
+    <cabinName>1号主变10kV一（1）</cabinName>
+    <cabinType>进线开关柜</cabinType>
+    <dev_Num>60</dev_Num>
+    <side>NearFace</side>
+    <itemNum>6</itemNum>
+  </info>
+  <device type="2">
+    <name>小车操控开关</name>
+    <taskinfo>
+      <type>2</type>
+      <subtype>83</subtype>
+      <number>1</number>
+      <order>6</order>
+    </taskinfo>
+    <roiinfo>
+      <startX>847</startX>
+      <startY>791</startY>
+      <distX>418</distX>
+      <distY>279</distY>
+      <width>73</width>
+      <height>76</height>
+    </roiinfo>
+    <unitinfo>
+      <stall>
+        <rangeLow>
+75</rangeLow>
+        <rangeHigh>105</rangeHigh>
+        <context>试验位置</context>
+      </stall>
+      <stall>
+        <rangeLow>106</rangeLow>
+        <rangeHigh>135</rangeHigh>
+        <context>操作位置</context>
+      </stall>
+    </unitinfo>
+  </device>
+</root>

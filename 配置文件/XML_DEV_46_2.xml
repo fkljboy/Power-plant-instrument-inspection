@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <QRCODE>
+    <startX>404</startX>
+    <startY>519</startY>
+    <width>89</width>
+    <height>94</height>
+    <content>009020000000000000058246</content>
+  </QRCODE>
+  <info>
+    <cabinName>自30 备用</cabinName>
+    <cabinType>出线开关柜</cabinType>
+    <dev_Num>46</dev_Num>
+    <side>NearFace</side>
+    <itemNum>10</itemNum>
+  </info>
+  <device type="2">
+    <name>小车操控开关</name>
+    <taskinfo>
+      <type>2</type>
+      <subtype>83</subtype>
+      <number>1</number>
+      <order>10</order>
+    </taskinfo>
+    <roiinfo>
+      <startX>707</startX>
+      <startY>725</startY>
+      <distX>303</distX>
+      <distY>206</distY>
+      <width>83</width>
+      <height>86</height>
+    </roiinfo>
+    <unitinfo>
+      <stall>
+        <rangeLow>75</rangeLow>
+        <rangeHigh>105</rangeHigh>
+        <context>试验位置</context>
+      </stall>
+      <stall>
+        <rangeLow>106</rangeLow>
+        <rangeHigh>135</rangeHigh>
+        <context>操作位置</context>
+      </stall>
+    </unitinfo>
+  </device>
+</root>

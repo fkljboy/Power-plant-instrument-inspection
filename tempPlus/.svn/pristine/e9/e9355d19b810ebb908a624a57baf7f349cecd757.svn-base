@@ -1,0 +1,1483 @@
+﻿using System;
+using System.Windows.Forms;
+
+namespace DetectGUIPlus
+{
+    partial class MainWindowSmall
+    {
+        /// <summary>
+        /// 必需的设计器变量。
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// 清理所有正在使用的资源。
+        /// </summary>
+        /// <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows 窗体设计器生成的代码
+
+        /// <summary>
+        /// 设计器支持所需的方法 - 不要修改
+        /// 使用代码编辑器修改此方法的内容。
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindowSmall));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.tabControl = new System.Windows.Forms.TabControl();
+            this.tabHome = new System.Windows.Forms.TabPage();
+            this.panelImgSource = new System.Windows.Forms.Panel();
+            this.pictureBoxSource = new System.Windows.Forms.PictureBox();
+            this.panelImgProcess = new System.Windows.Forms.Panel();
+            this.pictureBoxProcessed = new System.Windows.Forms.PictureBox();
+            this.panelResult = new System.Windows.Forms.Panel();
+            this.tabControlResult = new System.Windows.Forms.TabControl();
+            this.tabResultData = new System.Windows.Forms.TabPage();
+            this.dataGridViewDetect = new System.Windows.Forms.DataGridView();
+            this.ColumDetectNO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumDetectTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumDetectDevice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumDetectResult = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumDetectAlert = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabResultMatter = new System.Windows.Forms.TabPage();
+            this.dataGridViewDetail = new System.Windows.Forms.DataGridView();
+            this.ColumDetailNO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumDetailTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumDetailLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumDetailInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabResultAlarm = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.CloumAlertNO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumAlertTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumAlertDevice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumAlertType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumAlertValue = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumAlertLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumAlertContent = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumAlertConfirm = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.imageListx32 = new System.Windows.Forms.ImageList(this.components);
+            this.panelStatus = new System.Windows.Forms.Panel();
+            this.panelProcess = new System.Windows.Forms.Panel();
+            this.panelstatusDetect = new System.Windows.Forms.Panel();
+            this.dataGridViewStatus = new System.Windows.Forms.DataGridView();
+            this.ColumDetectName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumDetectValue = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.labelbarprocess = new System.Windows.Forms.Label();
+            this.circularProgressBarprocess = new CircularProgressBar.CircularProgressBar();
+            this.labelProcess = new System.Windows.Forms.Label();
+            this.pictureBoxProcess = new System.Windows.Forms.PictureBox();
+            this.panelLocation = new System.Windows.Forms.Panel();
+            this.panelLocationDetail = new System.Windows.Forms.Panel();
+            this.labelDevNum = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labelCab = new System.Windows.Forms.Label();
+            this.labelRom = new System.Windows.Forms.Label();
+            this.labelFac = new System.Windows.Forms.Label();
+            this.pictureBoxCab = new System.Windows.Forms.PictureBox();
+            this.pictureBoxRom = new System.Windows.Forms.PictureBox();
+            this.pictureBoxFac = new System.Windows.Forms.PictureBox();
+            this.circularProgressBarLocation = new CircularProgressBar.CircularProgressBar();
+            this.labelLoca = new System.Windows.Forms.Label();
+            this.pictureBoxlocation = new System.Windows.Forms.PictureBox();
+            this.tabChart = new System.Windows.Forms.TabPage();
+            this.tabSetting = new System.Windows.Forms.TabPage();
+            this.tabInfo = new System.Windows.Forms.TabPage();
+            this.tabDebug = new System.Windows.Forms.TabPage();
+            this.imageListTab = new System.Windows.Forms.ImageList(this.components);
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.文件FToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.新建NToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.打开OToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.保存SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.另存为AToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.打印PToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.打印预览VToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.ExitXToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.编辑EToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.撤消UToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.重复RToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.剪切TToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.复制CToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.粘贴PToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.全选AToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.工具TToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.选项OToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.xMLConfigurePlusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.帮助HToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.内容CToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.索引IToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.搜索SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.关于AToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panelSide = new System.Windows.Forms.Panel();
+            this.panelLog = new System.Windows.Forms.Panel();
+            this.labelJournal = new System.Windows.Forms.Label();
+            this.pictureBoxLog = new System.Windows.Forms.PictureBox();
+            this.panelJournal = new System.Windows.Forms.Panel();
+            this.comboBoxUpdown = new System.Windows.Forms.ComboBox();
+            this.comboBoxPicNum = new System.Windows.Forms.ComboBox();
+            this.buttonTestPic = new System.Windows.Forms.Button();
+            this.buttonLookUp = new System.Windows.Forms.Button();
+            this.labelschedule = new System.Windows.Forms.Label();
+            this.pictureBoxjournal = new System.Windows.Forms.PictureBox();
+            this.panelClock = new System.Windows.Forms.Panel();
+            this.labelDate = new System.Windows.Forms.Label();
+            this.labelWeek = new System.Windows.Forms.Label();
+            this.labelSecond = new System.Windows.Forms.Label();
+            this.labelTime = new System.Windows.Forms.Label();
+            this.timerClock = new System.Windows.Forms.Timer(this.components);
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.buttonloopTest = new System.Windows.Forms.Button();
+            this.numericUpDownloopTime = new System.Windows.Forms.NumericUpDown();
+            this.tabControl.SuspendLayout();
+            this.tabHome.SuspendLayout();
+            this.panelImgSource.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSource)).BeginInit();
+            this.panelImgProcess.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProcessed)).BeginInit();
+            this.panelResult.SuspendLayout();
+            this.tabControlResult.SuspendLayout();
+            this.tabResultData.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDetect)).BeginInit();
+            this.tabResultMatter.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDetail)).BeginInit();
+            this.tabResultAlarm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panelStatus.SuspendLayout();
+            this.panelProcess.SuspendLayout();
+            this.panelstatusDetect.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStatus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProcess)).BeginInit();
+            this.panelLocation.SuspendLayout();
+            this.panelLocationDetail.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCab)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRom)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFac)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxlocation)).BeginInit();
+            this.menuStrip.SuspendLayout();
+            this.panelSide.SuspendLayout();
+            this.panelLog.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLog)).BeginInit();
+            this.panelJournal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxjournal)).BeginInit();
+            this.panelClock.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownloopTime)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // tabControl
+            // 
+            this.tabControl.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
+            this.tabControl.Controls.Add(this.tabHome);
+            this.tabControl.Controls.Add(this.tabChart);
+            this.tabControl.Controls.Add(this.tabSetting);
+            this.tabControl.Controls.Add(this.tabInfo);
+            this.tabControl.Controls.Add(this.tabDebug);
+            this.tabControl.ImageList = this.imageListTab;
+            this.tabControl.ItemSize = new System.Drawing.Size(30, 96);
+            this.tabControl.Location = new System.Drawing.Point(238, 28);
+            this.tabControl.Name = "tabControl";
+            this.tabControl.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.tabControl.SelectedIndex = 0;
+            this.tabControl.Size = new System.Drawing.Size(962, 670);
+            this.tabControl.TabIndex = 2;
+            // 
+            // tabHome
+            // 
+            this.tabHome.BackColor = System.Drawing.Color.Transparent;
+            this.tabHome.Controls.Add(this.panelImgSource);
+            this.tabHome.Controls.Add(this.panelImgProcess);
+            this.tabHome.Controls.Add(this.panelResult);
+            this.tabHome.Controls.Add(this.panelStatus);
+            this.tabHome.ImageIndex = 2;
+            this.tabHome.Location = new System.Drawing.Point(4, 100);
+            this.tabHome.Name = "tabHome";
+            this.tabHome.Padding = new System.Windows.Forms.Padding(3);
+            this.tabHome.Size = new System.Drawing.Size(954, 566);
+            this.tabHome.TabIndex = 0;
+            // 
+            // panelImgSource
+            // 
+            this.panelImgSource.Controls.Add(this.pictureBoxSource);
+            this.panelImgSource.Location = new System.Drawing.Point(3, 3);
+            this.panelImgSource.Name = "panelImgSource";
+            this.panelImgSource.Size = new System.Drawing.Size(427, 224);
+            this.panelImgSource.TabIndex = 0;
+            // 
+            // pictureBoxSource
+            // 
+            this.pictureBoxSource.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxSource.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBoxSource.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxSource.Name = "pictureBoxSource";
+            this.pictureBoxSource.Size = new System.Drawing.Size(427, 224);
+            this.pictureBoxSource.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxSource.TabIndex = 0;
+            this.pictureBoxSource.TabStop = false;
+            this.pictureBoxSource.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.pictureBoxSource_MouseDoubleClick);
+            // 
+            // panelImgProcess
+            // 
+            this.panelImgProcess.Controls.Add(this.pictureBoxProcessed);
+            this.panelImgProcess.Location = new System.Drawing.Point(436, 3);
+            this.panelImgProcess.Name = "panelImgProcess";
+            this.panelImgProcess.Size = new System.Drawing.Size(515, 297);
+            this.panelImgProcess.TabIndex = 1;
+            // 
+            // pictureBoxProcessed
+            // 
+            this.pictureBoxProcessed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxProcessed.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBoxProcessed.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxProcessed.Name = "pictureBoxProcessed";
+            this.pictureBoxProcessed.Size = new System.Drawing.Size(515, 297);
+            this.pictureBoxProcessed.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxProcessed.TabIndex = 0;
+            this.pictureBoxProcessed.TabStop = false;
+            // 
+            // panelResult
+            // 
+            this.panelResult.BackColor = System.Drawing.Color.LightGray;
+            this.panelResult.Controls.Add(this.tabControlResult);
+            this.panelResult.Location = new System.Drawing.Point(436, 306);
+            this.panelResult.Name = "panelResult";
+            this.panelResult.Size = new System.Drawing.Size(515, 257);
+            this.panelResult.TabIndex = 2;
+            // 
+            // tabControlResult
+            // 
+            this.tabControlResult.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
+            this.tabControlResult.Controls.Add(this.tabResultData);
+            this.tabControlResult.Controls.Add(this.tabResultMatter);
+            this.tabControlResult.Controls.Add(this.tabResultAlarm);
+            this.tabControlResult.ImageList = this.imageListx32;
+            this.tabControlResult.ItemSize = new System.Drawing.Size(82, 32);
+            this.tabControlResult.Location = new System.Drawing.Point(3, 3);
+            this.tabControlResult.Name = "tabControlResult";
+            this.tabControlResult.SelectedIndex = 0;
+            this.tabControlResult.Size = new System.Drawing.Size(507, 247);
+            this.tabControlResult.TabIndex = 0;
+            // 
+            // tabResultData
+            // 
+            this.tabResultData.BackColor = System.Drawing.Color.LightGray;
+            this.tabResultData.Controls.Add(this.dataGridViewDetect);
+            this.tabResultData.ImageKey = "Data Sheet_32px.png";
+            this.tabResultData.Location = new System.Drawing.Point(4, 36);
+            this.tabResultData.Name = "tabResultData";
+            this.tabResultData.Padding = new System.Windows.Forms.Padding(3);
+            this.tabResultData.Size = new System.Drawing.Size(499, 207);
+            this.tabResultData.TabIndex = 0;
+            this.tabResultData.Text = "巡检数据";
+            // 
+            // dataGridViewDetect
+            // 
+            this.dataGridViewDetect.AllowUserToOrderColumns = true;
+            this.dataGridViewDetect.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDetect.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumDetectNO,
+            this.ColumDetectTime,
+            this.ColumDetectDevice,
+            this.ColumDetectResult,
+            this.ColumDetectAlert});
+            this.dataGridViewDetect.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewDetect.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewDetect.Name = "dataGridViewDetect";
+            this.dataGridViewDetect.RowHeadersVisible = false;
+            this.dataGridViewDetect.RowTemplate.Height = 23;
+            this.dataGridViewDetect.Size = new System.Drawing.Size(493, 201);
+            this.dataGridViewDetect.TabIndex = 0;
+            // 
+            // ColumDetectNO
+            // 
+            this.ColumDetectNO.HeaderText = "序号";
+            this.ColumDetectNO.Name = "ColumDetectNO";
+            // 
+            // ColumDetectTime
+            // 
+            this.ColumDetectTime.HeaderText = "时间";
+            this.ColumDetectTime.Name = "ColumDetectTime";
+            this.ColumDetectTime.Width = 250;
+            // 
+            // ColumDetectDevice
+            // 
+            this.ColumDetectDevice.HeaderText = "设备名称";
+            this.ColumDetectDevice.Name = "ColumDetectDevice";
+            this.ColumDetectDevice.Width = 350;
+            // 
+            // ColumDetectResult
+            // 
+            this.ColumDetectResult.HeaderText = "检测结果";
+            this.ColumDetectResult.Name = "ColumDetectResult";
+            this.ColumDetectResult.Width = 260;
+            // 
+            // ColumDetectAlert
+            // 
+            this.ColumDetectAlert.HeaderText = "报警类型";
+            this.ColumDetectAlert.Name = "ColumDetectAlert";
+            this.ColumDetectAlert.Width = 110;
+            // 
+            // tabResultMatter
+            // 
+            this.tabResultMatter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tabResultMatter.Controls.Add(this.dataGridViewDetail);
+            this.tabResultMatter.ImageKey = "Activity History_32px.png";
+            this.tabResultMatter.Location = new System.Drawing.Point(4, 36);
+            this.tabResultMatter.Name = "tabResultMatter";
+            this.tabResultMatter.Padding = new System.Windows.Forms.Padding(3);
+            this.tabResultMatter.Size = new System.Drawing.Size(499, 207);
+            this.tabResultMatter.TabIndex = 1;
+            this.tabResultMatter.Text = "事项";
+            // 
+            // dataGridViewDetail
+            // 
+            this.dataGridViewDetail.AllowUserToOrderColumns = true;
+            this.dataGridViewDetail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDetail.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumDetailNO,
+            this.ColumDetailTime,
+            this.ColumDetailLevel,
+            this.ColumDetailInfo});
+            this.dataGridViewDetail.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewDetail.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewDetail.Name = "dataGridViewDetail";
+            this.dataGridViewDetail.RowHeadersVisible = false;
+            this.dataGridViewDetail.RowTemplate.Height = 23;
+            this.dataGridViewDetail.Size = new System.Drawing.Size(493, 201);
+            this.dataGridViewDetail.TabIndex = 0;
+            // 
+            // ColumDetailNO
+            // 
+            this.ColumDetailNO.HeaderText = "序号";
+            this.ColumDetailNO.Name = "ColumDetailNO";
+            // 
+            // ColumDetailTime
+            // 
+            this.ColumDetailTime.HeaderText = "时间";
+            this.ColumDetailTime.Name = "ColumDetailTime";
+            this.ColumDetailTime.Width = 250;
+            // 
+            // ColumDetailLevel
+            // 
+            this.ColumDetailLevel.HeaderText = "级别";
+            this.ColumDetailLevel.Name = "ColumDetailLevel";
+            this.ColumDetailLevel.Width = 130;
+            // 
+            // ColumDetailInfo
+            // 
+            this.ColumDetailInfo.HeaderText = "信息";
+            this.ColumDetailInfo.Name = "ColumDetailInfo";
+            this.ColumDetailInfo.Width = 550;
+            // 
+            // tabResultAlarm
+            // 
+            this.tabResultAlarm.BackColor = System.Drawing.Color.LightGray;
+            this.tabResultAlarm.Controls.Add(this.dataGridView1);
+            this.tabResultAlarm.ImageKey = "Alert_32px.png";
+            this.tabResultAlarm.Location = new System.Drawing.Point(4, 36);
+            this.tabResultAlarm.Name = "tabResultAlarm";
+            this.tabResultAlarm.Padding = new System.Windows.Forms.Padding(3);
+            this.tabResultAlarm.Size = new System.Drawing.Size(499, 207);
+            this.tabResultAlarm.TabIndex = 2;
+            this.tabResultAlarm.Text = "报警信息";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CloumAlertNO,
+            this.ColumAlertTime,
+            this.ColumAlertDevice,
+            this.ColumAlertType,
+            this.ColumAlertValue,
+            this.ColumAlertLevel,
+            this.ColumAlertContent,
+            this.ColumAlertConfirm});
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowTemplate.Height = 23;
+            this.dataGridView1.Size = new System.Drawing.Size(493, 201);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // CloumAlertNO
+            // 
+            this.CloumAlertNO.HeaderText = "序号";
+            this.CloumAlertNO.Name = "CloumAlertNO";
+            this.CloumAlertNO.Width = 60;
+            // 
+            // ColumAlertTime
+            // 
+            this.ColumAlertTime.HeaderText = "时间";
+            this.ColumAlertTime.Name = "ColumAlertTime";
+            this.ColumAlertTime.Width = 150;
+            // 
+            // ColumAlertDevice
+            // 
+            this.ColumAlertDevice.HeaderText = "设备名称";
+            this.ColumAlertDevice.Name = "ColumAlertDevice";
+            this.ColumAlertDevice.Width = 200;
+            // 
+            // ColumAlertType
+            // 
+            this.ColumAlertType.HeaderText = "报警类型";
+            this.ColumAlertType.Name = "ColumAlertType";
+            // 
+            // ColumAlertValue
+            // 
+            this.ColumAlertValue.HeaderText = "报警数值";
+            this.ColumAlertValue.Name = "ColumAlertValue";
+            this.ColumAlertValue.Width = 90;
+            // 
+            // ColumAlertLevel
+            // 
+            this.ColumAlertLevel.HeaderText = "报警级别";
+            this.ColumAlertLevel.Name = "ColumAlertLevel";
+            // 
+            // ColumAlertContent
+            // 
+            this.ColumAlertContent.HeaderText = "报警内容";
+            this.ColumAlertContent.Name = "ColumAlertContent";
+            this.ColumAlertContent.Width = 270;
+            // 
+            // ColumAlertConfirm
+            // 
+            this.ColumAlertConfirm.HeaderText = "确认状态";
+            this.ColumAlertConfirm.Name = "ColumAlertConfirm";
+            // 
+            // imageListx32
+            // 
+            this.imageListx32.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListx32.ImageStream")));
+            this.imageListx32.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageListx32.Images.SetKeyName(0, "Data Sheet_32px.png");
+            this.imageListx32.Images.SetKeyName(1, "Activity History_32px.png");
+            this.imageListx32.Images.SetKeyName(2, "Alert_32px.png");
+            this.imageListx32.Images.SetKeyName(3, "Console_32px.png");
+            this.imageListx32.Images.SetKeyName(4, "Full Image_32px.png");
+            // 
+            // panelStatus
+            // 
+            this.panelStatus.BackColor = System.Drawing.Color.Silver;
+            this.panelStatus.Controls.Add(this.panelProcess);
+            this.panelStatus.Controls.Add(this.panelLocation);
+            this.panelStatus.Location = new System.Drawing.Point(3, 230);
+            this.panelStatus.Name = "panelStatus";
+            this.panelStatus.Size = new System.Drawing.Size(427, 333);
+            this.panelStatus.TabIndex = 1;
+            // 
+            // panelProcess
+            // 
+            this.panelProcess.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelProcess.Controls.Add(this.panelstatusDetect);
+            this.panelProcess.Controls.Add(this.labelbarprocess);
+            this.panelProcess.Controls.Add(this.circularProgressBarprocess);
+            this.panelProcess.Controls.Add(this.labelProcess);
+            this.panelProcess.Controls.Add(this.pictureBoxProcess);
+            this.panelProcess.Location = new System.Drawing.Point(1, 82);
+            this.panelProcess.Name = "panelProcess";
+            this.panelProcess.Size = new System.Drawing.Size(424, 248);
+            this.panelProcess.TabIndex = 1;
+            // 
+            // panelstatusDetect
+            // 
+            this.panelstatusDetect.Controls.Add(this.dataGridViewStatus);
+            this.panelstatusDetect.Location = new System.Drawing.Point(83, 3);
+            this.panelstatusDetect.Name = "panelstatusDetect";
+            this.panelstatusDetect.Size = new System.Drawing.Size(341, 241);
+            this.panelstatusDetect.TabIndex = 4;
+            // 
+            // dataGridViewStatus
+            // 
+            this.dataGridViewStatus.AllowUserToAddRows = false;
+            this.dataGridViewStatus.AllowUserToDeleteRows = false;
+            this.dataGridViewStatus.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewStatus.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumDetectName,
+            this.ColumDetectValue});
+            this.dataGridViewStatus.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewStatus.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewStatus.Name = "dataGridViewStatus";
+            this.dataGridViewStatus.ReadOnly = true;
+            this.dataGridViewStatus.RowHeadersVisible = false;
+            this.dataGridViewStatus.RowTemplate.Height = 23;
+            this.dataGridViewStatus.Size = new System.Drawing.Size(341, 241);
+            this.dataGridViewStatus.TabIndex = 0;
+            this.toolTip.SetToolTip(this.dataGridViewStatus, "当前电柜的检测结果");
+            // 
+            // ColumDetectName
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.ColumDetectName.DefaultCellStyle = dataGridViewCellStyle1;
+            this.ColumDetectName.HeaderText = "仪表序号";
+            this.ColumDetectName.Name = "ColumDetectName";
+            this.ColumDetectName.ReadOnly = true;
+            this.ColumDetectName.Width = 140;
+            // 
+            // ColumDetectValue
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.ColumDetectValue.DefaultCellStyle = dataGridViewCellStyle2;
+            this.ColumDetectValue.HeaderText = "检测结果";
+            this.ColumDetectValue.Name = "ColumDetectValue";
+            this.ColumDetectValue.ReadOnly = true;
+            this.ColumDetectValue.Width = 195;
+            // 
+            // labelbarprocess
+            // 
+            this.labelbarprocess.AutoSize = true;
+            this.labelbarprocess.Font = new System.Drawing.Font("微软雅黑", 7F, System.Drawing.FontStyle.Bold);
+            this.labelbarprocess.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(80)))));
+            this.labelbarprocess.Location = new System.Drawing.Point(3, 222);
+            this.labelbarprocess.Name = "labelbarprocess";
+            this.labelbarprocess.Size = new System.Drawing.Size(80, 15);
+            this.labelbarprocess.TabIndex = 5;
+            this.labelbarprocess.Text = "检测进度：1/10";
+            // 
+            // circularProgressBarprocess
+            // 
+            this.circularProgressBarprocess.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
+            this.circularProgressBarprocess.AnimationSpeed = 500;
+            this.circularProgressBarprocess.BackColor = System.Drawing.Color.Transparent;
+            this.circularProgressBarprocess.Font = new System.Drawing.Font("微软雅黑", 20F, System.Drawing.FontStyle.Bold);
+            this.circularProgressBarprocess.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(80)))));
+            this.circularProgressBarprocess.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.circularProgressBarprocess.InnerMargin = -1;
+            this.circularProgressBarprocess.InnerWidth = -1;
+            this.circularProgressBarprocess.Location = new System.Drawing.Point(7, 149);
+            this.circularProgressBarprocess.MarqueeAnimationSpeed = 500;
+            this.circularProgressBarprocess.Name = "circularProgressBarprocess";
+            this.circularProgressBarprocess.OuterColor = System.Drawing.Color.Gray;
+            this.circularProgressBarprocess.OuterMargin = -15;
+            this.circularProgressBarprocess.OuterWidth = 10;
+            this.circularProgressBarprocess.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(80)))));
+            this.circularProgressBarprocess.ProgressWidth = 6;
+            this.circularProgressBarprocess.SecondaryFont = new System.Drawing.Font("宋体", 15F);
+            this.circularProgressBarprocess.Size = new System.Drawing.Size(70, 70);
+            this.circularProgressBarprocess.StartAngle = -90;
+            this.circularProgressBarprocess.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.circularProgressBarprocess.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
+            this.circularProgressBarprocess.SubscriptText = "";
+            this.circularProgressBarprocess.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.circularProgressBarprocess.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
+            this.circularProgressBarprocess.SuperscriptText = "";
+            this.circularProgressBarprocess.TabIndex = 0;
+            this.circularProgressBarprocess.Text = "0%";
+            this.circularProgressBarprocess.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
+            this.circularProgressBarprocess.Value = 68;
+            // 
+            // labelProcess
+            // 
+            this.labelProcess.AutoSize = true;
+            this.labelProcess.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold);
+            this.labelProcess.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(80)))));
+            this.labelProcess.Location = new System.Drawing.Point(3, 76);
+            this.labelProcess.Name = "labelProcess";
+            this.labelProcess.Size = new System.Drawing.Size(74, 22);
+            this.labelProcess.TabIndex = 2;
+            this.labelProcess.Text = "检测状态";
+            // 
+            // pictureBoxProcess
+            // 
+            this.pictureBoxProcess.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxProcess.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxProcess.Image")));
+            this.pictureBoxProcess.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxProcess.Name = "pictureBoxProcess";
+            this.pictureBoxProcess.Size = new System.Drawing.Size(70, 70);
+            this.pictureBoxProcess.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxProcess.TabIndex = 1;
+            this.pictureBoxProcess.TabStop = false;
+            // 
+            // panelLocation
+            // 
+            this.panelLocation.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelLocation.Controls.Add(this.panelLocationDetail);
+            this.panelLocation.Controls.Add(this.circularProgressBarLocation);
+            this.panelLocation.Controls.Add(this.labelLoca);
+            this.panelLocation.Controls.Add(this.pictureBoxlocation);
+            this.panelLocation.Location = new System.Drawing.Point(3, 3);
+            this.panelLocation.Name = "panelLocation";
+            this.panelLocation.Size = new System.Drawing.Size(421, 82);
+            this.panelLocation.TabIndex = 0;
+            // 
+            // panelLocationDetail
+            // 
+            this.panelLocationDetail.Controls.Add(this.labelDevNum);
+            this.panelLocationDetail.Controls.Add(this.pictureBox1);
+            this.panelLocationDetail.Controls.Add(this.labelCab);
+            this.panelLocationDetail.Controls.Add(this.labelRom);
+            this.panelLocationDetail.Controls.Add(this.labelFac);
+            this.panelLocationDetail.Controls.Add(this.pictureBoxCab);
+            this.panelLocationDetail.Controls.Add(this.pictureBoxRom);
+            this.panelLocationDetail.Controls.Add(this.pictureBoxFac);
+            this.panelLocationDetail.Location = new System.Drawing.Point(171, 3);
+            this.panelLocationDetail.Name = "panelLocationDetail";
+            this.panelLocationDetail.Size = new System.Drawing.Size(247, 70);
+            this.panelLocationDetail.TabIndex = 3;
+            // 
+            // labelDevNum
+            // 
+            this.labelDevNum.AutoSize = true;
+            this.labelDevNum.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelDevNum.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(80)))));
+            this.labelDevNum.Location = new System.Drawing.Point(130, 37);
+            this.labelDevNum.Name = "labelDevNum";
+            this.labelDevNum.Size = new System.Drawing.Size(36, 27);
+            this.labelDevNum.TabIndex = 7;
+            this.labelDevNum.Text = "60";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(99, 37);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
+            // labelCab
+            // 
+            this.labelCab.AutoSize = true;
+            this.labelCab.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelCab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(80)))));
+            this.labelCab.Location = new System.Drawing.Point(130, 3);
+            this.labelCab.Name = "labelCab";
+            this.labelCab.Size = new System.Drawing.Size(96, 27);
+            this.labelCab.TabIndex = 5;
+            this.labelCab.Text = "36号电柜";
+            // 
+            // labelRom
+            // 
+            this.labelRom.AutoSize = true;
+            this.labelRom.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelRom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(80)))));
+            this.labelRom.Location = new System.Drawing.Point(35, 3);
+            this.labelRom.Name = "labelRom";
+            this.labelRom.Size = new System.Drawing.Size(64, 27);
+            this.labelRom.TabIndex = 4;
+            this.labelRom.Text = "1号间";
+            // 
+            // labelFac
+            // 
+            this.labelFac.AutoSize = true;
+            this.labelFac.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelFac.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(80)))));
+            this.labelFac.Location = new System.Drawing.Point(35, 37);
+            this.labelFac.Name = "labelFac";
+            this.labelFac.Size = new System.Drawing.Size(64, 27);
+            this.labelFac.TabIndex = 3;
+            this.labelFac.Text = "5号站";
+            // 
+            // pictureBoxCab
+            // 
+            this.pictureBoxCab.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxCab.Image")));
+            this.pictureBoxCab.Location = new System.Drawing.Point(99, 3);
+            this.pictureBoxCab.Name = "pictureBoxCab";
+            this.pictureBoxCab.Size = new System.Drawing.Size(25, 25);
+            this.pictureBoxCab.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxCab.TabIndex = 2;
+            this.pictureBoxCab.TabStop = false;
+            // 
+            // pictureBoxRom
+            // 
+            this.pictureBoxRom.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxRom.Image")));
+            this.pictureBoxRom.Location = new System.Drawing.Point(4, 3);
+            this.pictureBoxRom.Name = "pictureBoxRom";
+            this.pictureBoxRom.Size = new System.Drawing.Size(25, 25);
+            this.pictureBoxRom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxRom.TabIndex = 1;
+            this.pictureBoxRom.TabStop = false;
+            // 
+            // pictureBoxFac
+            // 
+            this.pictureBoxFac.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxFac.Image")));
+            this.pictureBoxFac.Location = new System.Drawing.Point(4, 34);
+            this.pictureBoxFac.Name = "pictureBoxFac";
+            this.pictureBoxFac.Size = new System.Drawing.Size(25, 25);
+            this.pictureBoxFac.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxFac.TabIndex = 0;
+            this.pictureBoxFac.TabStop = false;
+            // 
+            // circularProgressBarLocation
+            // 
+            this.circularProgressBarLocation.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
+            this.circularProgressBarLocation.AnimationSpeed = 200;
+            this.circularProgressBarLocation.BackColor = System.Drawing.Color.Transparent;
+            this.circularProgressBarLocation.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold);
+            this.circularProgressBarLocation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(80)))));
+            this.circularProgressBarLocation.InnerColor = System.Drawing.Color.White;
+            this.circularProgressBarLocation.InnerMargin = -1;
+            this.circularProgressBarLocation.InnerWidth = -1;
+            this.circularProgressBarLocation.Location = new System.Drawing.Point(83, 3);
+            this.circularProgressBarLocation.MarqueeAnimationSpeed = 5000;
+            this.circularProgressBarLocation.Name = "circularProgressBarLocation";
+            this.circularProgressBarLocation.OuterColor = System.Drawing.Color.Gray;
+            this.circularProgressBarLocation.OuterMargin = -15;
+            this.circularProgressBarLocation.OuterWidth = 10;
+            this.circularProgressBarLocation.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(80)))));
+            this.circularProgressBarLocation.ProgressWidth = 10;
+            this.circularProgressBarLocation.SecondaryFont = new System.Drawing.Font("宋体", 10F);
+            this.circularProgressBarLocation.Size = new System.Drawing.Size(82, 70);
+            this.circularProgressBarLocation.StartAngle = 60;
+            this.circularProgressBarLocation.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
+            this.circularProgressBarLocation.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.circularProgressBarLocation.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
+            this.circularProgressBarLocation.SubscriptText = "";
+            this.circularProgressBarLocation.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.circularProgressBarLocation.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
+            this.circularProgressBarLocation.SuperscriptText = "";
+            this.circularProgressBarLocation.TabIndex = 2;
+            this.circularProgressBarLocation.Text = "移动中......";
+            this.circularProgressBarLocation.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
+            this.circularProgressBarLocation.Value = 50;
+            // 
+            // labelLoca
+            // 
+            this.labelLoca.AutoSize = true;
+            this.labelLoca.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold);
+            this.labelLoca.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(80)))));
+            this.labelLoca.Location = new System.Drawing.Point(3, 52);
+            this.labelLoca.Name = "labelLoca";
+            this.labelLoca.Size = new System.Drawing.Size(74, 22);
+            this.labelLoca.TabIndex = 1;
+            this.labelLoca.Text = "定位状态";
+            // 
+            // pictureBoxlocation
+            // 
+            this.pictureBoxlocation.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxlocation.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxlocation.Image")));
+            this.pictureBoxlocation.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxlocation.Name = "pictureBoxlocation";
+            this.pictureBoxlocation.Size = new System.Drawing.Size(57, 46);
+            this.pictureBoxlocation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxlocation.TabIndex = 0;
+            this.pictureBoxlocation.TabStop = false;
+            // 
+            // tabChart
+            // 
+            this.tabChart.BackColor = System.Drawing.Color.LightGreen;
+            this.tabChart.ImageKey = "Combo Chart_96px.png";
+            this.tabChart.Location = new System.Drawing.Point(4, 100);
+            this.tabChart.Name = "tabChart";
+            this.tabChart.Padding = new System.Windows.Forms.Padding(3);
+            this.tabChart.Size = new System.Drawing.Size(954, 566);
+            this.tabChart.TabIndex = 1;
+            // 
+            // tabSetting
+            // 
+            this.tabSetting.BackColor = System.Drawing.Color.SkyBlue;
+            this.tabSetting.ImageIndex = 5;
+            this.tabSetting.Location = new System.Drawing.Point(4, 100);
+            this.tabSetting.Name = "tabSetting";
+            this.tabSetting.Padding = new System.Windows.Forms.Padding(3);
+            this.tabSetting.Size = new System.Drawing.Size(954, 566);
+            this.tabSetting.TabIndex = 2;
+            // 
+            // tabInfo
+            // 
+            this.tabInfo.BackColor = System.Drawing.Color.AliceBlue;
+            this.tabInfo.ImageKey = "Info_96px.png";
+            this.tabInfo.Location = new System.Drawing.Point(4, 100);
+            this.tabInfo.Name = "tabInfo";
+            this.tabInfo.Padding = new System.Windows.Forms.Padding(3);
+            this.tabInfo.Size = new System.Drawing.Size(954, 566);
+            this.tabInfo.TabIndex = 3;
+            // 
+            // tabDebug
+            // 
+            this.tabDebug.BackColor = System.Drawing.Color.Transparent;
+            this.tabDebug.ImageIndex = 0;
+            this.tabDebug.Location = new System.Drawing.Point(4, 100);
+            this.tabDebug.Name = "tabDebug";
+            this.tabDebug.Padding = new System.Windows.Forms.Padding(3);
+            this.tabDebug.Size = new System.Drawing.Size(954, 566);
+            this.tabDebug.TabIndex = 4;
+            // 
+            // imageListTab
+            // 
+            this.imageListTab.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListTab.ImageStream")));
+            this.imageListTab.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageListTab.Images.SetKeyName(0, "Code_96px.png");
+            this.imageListTab.Images.SetKeyName(1, "Combo Chart_96px.png");
+            this.imageListTab.Images.SetKeyName(2, "Home_96px.png");
+            this.imageListTab.Images.SetKeyName(3, "Info_96px.png");
+            this.imageListTab.Images.SetKeyName(4, "Search_96px.png");
+            this.imageListTab.Images.SetKeyName(5, "Settings_96px.png");
+            // 
+            // menuStrip
+            // 
+            this.menuStrip.BackColor = System.Drawing.Color.DarkGray;
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.文件FToolStripMenuItem,
+            this.编辑EToolStripMenuItem,
+            this.工具TToolStripMenuItem,
+            this.帮助HToolStripMenuItem});
+            this.menuStrip.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip.Name = "menuStrip";
+            this.menuStrip.Size = new System.Drawing.Size(1200, 25);
+            this.menuStrip.TabIndex = 3;
+            this.menuStrip.Text = "menuStrip1";
+            // 
+            // 文件FToolStripMenuItem
+            // 
+            this.文件FToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.新建NToolStripMenuItem,
+            this.打开OToolStripMenuItem,
+            this.toolStripSeparator,
+            this.保存SToolStripMenuItem,
+            this.另存为AToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.打印PToolStripMenuItem,
+            this.打印预览VToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.ExitXToolStripMenuItem});
+            this.文件FToolStripMenuItem.Name = "文件FToolStripMenuItem";
+            this.文件FToolStripMenuItem.Size = new System.Drawing.Size(58, 21);
+            this.文件FToolStripMenuItem.Text = "文件(&F)";
+            // 
+            // 新建NToolStripMenuItem
+            // 
+            this.新建NToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("新建NToolStripMenuItem.Image")));
+            this.新建NToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.新建NToolStripMenuItem.Name = "新建NToolStripMenuItem";
+            this.新建NToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            this.新建NToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.新建NToolStripMenuItem.Text = "新建(&N)";
+            // 
+            // 打开OToolStripMenuItem
+            // 
+            this.打开OToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("打开OToolStripMenuItem.Image")));
+            this.打开OToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.打开OToolStripMenuItem.Name = "打开OToolStripMenuItem";
+            this.打开OToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.打开OToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.打开OToolStripMenuItem.Text = "打开(&O)";
+            // 
+            // toolStripSeparator
+            // 
+            this.toolStripSeparator.Name = "toolStripSeparator";
+            this.toolStripSeparator.Size = new System.Drawing.Size(162, 6);
+            // 
+            // 保存SToolStripMenuItem
+            // 
+            this.保存SToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("保存SToolStripMenuItem.Image")));
+            this.保存SToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.保存SToolStripMenuItem.Name = "保存SToolStripMenuItem";
+            this.保存SToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.保存SToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.保存SToolStripMenuItem.Text = "保存(&S)";
+            // 
+            // 另存为AToolStripMenuItem
+            // 
+            this.另存为AToolStripMenuItem.Name = "另存为AToolStripMenuItem";
+            this.另存为AToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.另存为AToolStripMenuItem.Text = "另存为(&A)";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(162, 6);
+            // 
+            // 打印PToolStripMenuItem
+            // 
+            this.打印PToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("打印PToolStripMenuItem.Image")));
+            this.打印PToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.打印PToolStripMenuItem.Name = "打印PToolStripMenuItem";
+            this.打印PToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
+            this.打印PToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.打印PToolStripMenuItem.Text = "打印(&P)";
+            // 
+            // 打印预览VToolStripMenuItem
+            // 
+            this.打印预览VToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("打印预览VToolStripMenuItem.Image")));
+            this.打印预览VToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.打印预览VToolStripMenuItem.Name = "打印预览VToolStripMenuItem";
+            this.打印预览VToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.打印预览VToolStripMenuItem.Text = "打印预览(&V)";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(162, 6);
+            // 
+            // ExitXToolStripMenuItem
+            // 
+            this.ExitXToolStripMenuItem.Name = "ExitXToolStripMenuItem";
+            this.ExitXToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.ExitXToolStripMenuItem.Text = "退出(&X)";
+            this.ExitXToolStripMenuItem.Click += new System.EventHandler(this.ExitXToolStripMenuItem_Click);
+            // 
+            // 编辑EToolStripMenuItem
+            // 
+            this.编辑EToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.撤消UToolStripMenuItem,
+            this.重复RToolStripMenuItem,
+            this.toolStripSeparator3,
+            this.剪切TToolStripMenuItem,
+            this.复制CToolStripMenuItem,
+            this.粘贴PToolStripMenuItem,
+            this.toolStripSeparator4,
+            this.全选AToolStripMenuItem});
+            this.编辑EToolStripMenuItem.Name = "编辑EToolStripMenuItem";
+            this.编辑EToolStripMenuItem.Size = new System.Drawing.Size(59, 21);
+            this.编辑EToolStripMenuItem.Text = "编辑(&E)";
+            // 
+            // 撤消UToolStripMenuItem
+            // 
+            this.撤消UToolStripMenuItem.Name = "撤消UToolStripMenuItem";
+            this.撤消UToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
+            this.撤消UToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.撤消UToolStripMenuItem.Text = "撤消(&U)";
+            // 
+            // 重复RToolStripMenuItem
+            // 
+            this.重复RToolStripMenuItem.Name = "重复RToolStripMenuItem";
+            this.重复RToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
+            this.重复RToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.重复RToolStripMenuItem.Text = "重复(&R)";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(158, 6);
+            // 
+            // 剪切TToolStripMenuItem
+            // 
+            this.剪切TToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("剪切TToolStripMenuItem.Image")));
+            this.剪切TToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.剪切TToolStripMenuItem.Name = "剪切TToolStripMenuItem";
+            this.剪切TToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
+            this.剪切TToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.剪切TToolStripMenuItem.Text = "剪切(&T)";
+            // 
+            // 复制CToolStripMenuItem
+            // 
+            this.复制CToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("复制CToolStripMenuItem.Image")));
+            this.复制CToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.复制CToolStripMenuItem.Name = "复制CToolStripMenuItem";
+            this.复制CToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
+            this.复制CToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.复制CToolStripMenuItem.Text = "复制(&C)";
+            // 
+            // 粘贴PToolStripMenuItem
+            // 
+            this.粘贴PToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("粘贴PToolStripMenuItem.Image")));
+            this.粘贴PToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.粘贴PToolStripMenuItem.Name = "粘贴PToolStripMenuItem";
+            this.粘贴PToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
+            this.粘贴PToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.粘贴PToolStripMenuItem.Text = "粘贴(&P)";
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(158, 6);
+            // 
+            // 全选AToolStripMenuItem
+            // 
+            this.全选AToolStripMenuItem.Name = "全选AToolStripMenuItem";
+            this.全选AToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.全选AToolStripMenuItem.Text = "全选(&A)";
+            // 
+            // 工具TToolStripMenuItem
+            // 
+            this.工具TToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.选项OToolStripMenuItem,
+            this.xMLConfigurePlusToolStripMenuItem});
+            this.工具TToolStripMenuItem.Name = "工具TToolStripMenuItem";
+            this.工具TToolStripMenuItem.Size = new System.Drawing.Size(59, 21);
+            this.工具TToolStripMenuItem.Text = "工具(&T)";
+            // 
+            // 选项OToolStripMenuItem
+            // 
+            this.选项OToolStripMenuItem.Name = "选项OToolStripMenuItem";
+            this.选项OToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.选项OToolStripMenuItem.Text = "选项(&O)";
+            // 
+            // xMLConfigurePlusToolStripMenuItem
+            // 
+            this.xMLConfigurePlusToolStripMenuItem.Name = "xMLConfigurePlusToolStripMenuItem";
+            this.xMLConfigurePlusToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.xMLConfigurePlusToolStripMenuItem.Text = "XML配置工具(&P)";
+            this.xMLConfigurePlusToolStripMenuItem.Click += new System.EventHandler(this.xMLConfigurePluasToolStripMenuItem_Click);
+            // 
+            // 帮助HToolStripMenuItem
+            // 
+            this.帮助HToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.内容CToolStripMenuItem,
+            this.索引IToolStripMenuItem,
+            this.搜索SToolStripMenuItem,
+            this.toolStripSeparator5,
+            this.关于AToolStripMenuItem});
+            this.帮助HToolStripMenuItem.Name = "帮助HToolStripMenuItem";
+            this.帮助HToolStripMenuItem.Size = new System.Drawing.Size(61, 21);
+            this.帮助HToolStripMenuItem.Text = "帮助(&H)";
+            // 
+            // 内容CToolStripMenuItem
+            // 
+            this.内容CToolStripMenuItem.Name = "内容CToolStripMenuItem";
+            this.内容CToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.内容CToolStripMenuItem.Text = "内容(&C)";
+            // 
+            // 索引IToolStripMenuItem
+            // 
+            this.索引IToolStripMenuItem.Name = "索引IToolStripMenuItem";
+            this.索引IToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.索引IToolStripMenuItem.Text = "索引(&I)";
+            // 
+            // 搜索SToolStripMenuItem
+            // 
+            this.搜索SToolStripMenuItem.Name = "搜索SToolStripMenuItem";
+            this.搜索SToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.搜索SToolStripMenuItem.Text = "搜索(&S)";
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(122, 6);
+            // 
+            // 关于AToolStripMenuItem
+            // 
+            this.关于AToolStripMenuItem.Name = "关于AToolStripMenuItem";
+            this.关于AToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.关于AToolStripMenuItem.Text = "关于(&A)...";
+            // 
+            // panelSide
+            // 
+            this.panelSide.BackColor = System.Drawing.Color.LightGray;
+            this.panelSide.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelSide.Controls.Add(this.panelLog);
+            this.panelSide.Controls.Add(this.panelJournal);
+            this.panelSide.Controls.Add(this.panelClock);
+            this.panelSide.Location = new System.Drawing.Point(0, 28);
+            this.panelSide.Name = "panelSide";
+            this.panelSide.Size = new System.Drawing.Size(237, 670);
+            this.panelSide.TabIndex = 1;
+            // 
+            // panelLog
+            // 
+            this.panelLog.Controls.Add(this.labelJournal);
+            this.panelLog.Controls.Add(this.pictureBoxLog);
+            this.panelLog.Location = new System.Drawing.Point(3, 507);
+            this.panelLog.Name = "panelLog";
+            this.panelLog.Size = new System.Drawing.Size(228, 158);
+            this.panelLog.TabIndex = 2;
+            // 
+            // labelJournal
+            // 
+            this.labelJournal.AutoSize = true;
+            this.labelJournal.Font = new System.Drawing.Font("微软雅黑", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelJournal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(80)))));
+            this.labelJournal.Location = new System.Drawing.Point(106, 87);
+            this.labelJournal.Name = "labelJournal";
+            this.labelJournal.Size = new System.Drawing.Size(123, 36);
+            this.labelJournal.TabIndex = 2;
+            this.labelJournal.Text = "工作日志";
+            // 
+            // pictureBoxLog
+            // 
+            this.pictureBoxLog.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLog.Image")));
+            this.pictureBoxLog.Location = new System.Drawing.Point(8, 45);
+            this.pictureBoxLog.Name = "pictureBoxLog";
+            this.pictureBoxLog.Size = new System.Drawing.Size(96, 96);
+            this.pictureBoxLog.TabIndex = 1;
+            this.pictureBoxLog.TabStop = false;
+            // 
+            // panelJournal
+            // 
+            this.panelJournal.Controls.Add(this.numericUpDownloopTime);
+            this.panelJournal.Controls.Add(this.buttonloopTest);
+            this.panelJournal.Controls.Add(this.comboBoxUpdown);
+            this.panelJournal.Controls.Add(this.comboBoxPicNum);
+            this.panelJournal.Controls.Add(this.buttonTestPic);
+            this.panelJournal.Controls.Add(this.buttonLookUp);
+            this.panelJournal.Controls.Add(this.labelschedule);
+            this.panelJournal.Controls.Add(this.pictureBoxjournal);
+            this.panelJournal.Location = new System.Drawing.Point(3, 160);
+            this.panelJournal.Name = "panelJournal";
+            this.panelJournal.Size = new System.Drawing.Size(228, 341);
+            this.panelJournal.TabIndex = 1;
+            // 
+            // comboBoxUpdown
+            // 
+            this.comboBoxUpdown.FormattingEnabled = true;
+            this.comboBoxUpdown.Items.AddRange(new object[] {
+            "上侧",
+            "下侧"});
+            this.comboBoxUpdown.Location = new System.Drawing.Point(9, 212);
+            this.comboBoxUpdown.Name = "comboBoxUpdown";
+            this.comboBoxUpdown.Size = new System.Drawing.Size(100, 20);
+            this.comboBoxUpdown.TabIndex = 7;
+            this.comboBoxUpdown.Text = "上侧";
+            this.comboBoxUpdown.SelectedIndexChanged += new System.EventHandler(this.comboBoxUpdown_SelectedIndexChanged);
+            // 
+            // comboBoxPicNum
+            // 
+            this.comboBoxPicNum.FormattingEnabled = true;
+            this.comboBoxPicNum.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36"});
+            this.comboBoxPicNum.Location = new System.Drawing.Point(9, 175);
+            this.comboBoxPicNum.Name = "comboBoxPicNum";
+            this.comboBoxPicNum.Size = new System.Drawing.Size(100, 20);
+            this.comboBoxPicNum.TabIndex = 6;
+            this.comboBoxPicNum.SelectedIndexChanged += new System.EventHandler(this.comboBoxPicNum_SelectedIndexChanged);
+            // 
+            // buttonTestPic
+            // 
+            this.buttonTestPic.Location = new System.Drawing.Point(128, 175);
+            this.buttonTestPic.Name = "buttonTestPic";
+            this.buttonTestPic.Size = new System.Drawing.Size(96, 64);
+            this.buttonTestPic.TabIndex = 5;
+            this.buttonTestPic.Text = "测试图像";
+            this.buttonTestPic.UseVisualStyleBackColor = true;
+            this.buttonTestPic.Click += new System.EventHandler(this.buttonTestPic_Click);
+            // 
+            // buttonLookUp
+            // 
+            this.buttonLookUp.Location = new System.Drawing.Point(3, 117);
+            this.buttonLookUp.Name = "buttonLookUp";
+            this.buttonLookUp.Size = new System.Drawing.Size(217, 39);
+            this.buttonLookUp.TabIndex = 4;
+            this.buttonLookUp.Text = "打开模板查看ROI";
+            this.buttonLookUp.UseVisualStyleBackColor = true;
+            this.buttonLookUp.Click += new System.EventHandler(this.buttonLookUp_Click);
+            // 
+            // labelschedule
+            // 
+            this.labelschedule.AutoSize = true;
+            this.labelschedule.Font = new System.Drawing.Font("微软雅黑", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelschedule.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(80)))));
+            this.labelschedule.Location = new System.Drawing.Point(97, 63);
+            this.labelschedule.Name = "labelschedule";
+            this.labelschedule.Size = new System.Drawing.Size(123, 36);
+            this.labelschedule.TabIndex = 1;
+            this.labelschedule.Text = "巡检计划";
+            // 
+            // pictureBoxjournal
+            // 
+            this.pictureBoxjournal.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxjournal.Image")));
+            this.pictureBoxjournal.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxjournal.Name = "pictureBoxjournal";
+            this.pictureBoxjournal.Size = new System.Drawing.Size(96, 96);
+            this.pictureBoxjournal.TabIndex = 0;
+            this.pictureBoxjournal.TabStop = false;
+            // 
+            // panelClock
+            // 
+            this.panelClock.BackColor = System.Drawing.Color.Transparent;
+            this.panelClock.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelClock.Controls.Add(this.labelDate);
+            this.panelClock.Controls.Add(this.labelWeek);
+            this.panelClock.Controls.Add(this.labelSecond);
+            this.panelClock.Controls.Add(this.labelTime);
+            this.panelClock.Location = new System.Drawing.Point(3, 3);
+            this.panelClock.Name = "panelClock";
+            this.panelClock.Size = new System.Drawing.Size(228, 140);
+            this.panelClock.TabIndex = 0;
+            // 
+            // labelDate
+            // 
+            this.labelDate.AutoSize = true;
+            this.labelDate.BackColor = System.Drawing.Color.Transparent;
+            this.labelDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelDate.Font = new System.Drawing.Font("黑体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(80)))));
+            this.labelDate.Location = new System.Drawing.Point(102, 108);
+            this.labelDate.Name = "labelDate";
+            this.labelDate.Size = new System.Drawing.Size(121, 22);
+            this.labelDate.TabIndex = 3;
+            this.labelDate.Text = "0000-00-00";
+            // 
+            // labelWeek
+            // 
+            this.labelWeek.AutoSize = true;
+            this.labelWeek.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelWeek.Font = new System.Drawing.Font("黑体", 20F);
+            this.labelWeek.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(80)))));
+            this.labelWeek.Location = new System.Drawing.Point(8, 101);
+            this.labelWeek.Name = "labelWeek";
+            this.labelWeek.Size = new System.Drawing.Size(98, 29);
+            this.labelWeek.TabIndex = 2;
+            this.labelWeek.Text = "星期一";
+            // 
+            // labelSecond
+            // 
+            this.labelSecond.AutoSize = true;
+            this.labelSecond.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelSecond.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(80)))));
+            this.labelSecond.Location = new System.Drawing.Point(156, 33);
+            this.labelSecond.Name = "labelSecond";
+            this.labelSecond.Size = new System.Drawing.Size(46, 33);
+            this.labelSecond.TabIndex = 1;
+            this.labelSecond.Text = "00";
+            // 
+            // labelTime
+            // 
+            this.labelTime.AutoSize = true;
+            this.labelTime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelTime.Font = new System.Drawing.Font("黑体", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.labelTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(80)))));
+            this.labelTime.Location = new System.Drawing.Point(8, 14);
+            this.labelTime.Name = "labelTime";
+            this.labelTime.Size = new System.Drawing.Size(154, 52);
+            this.labelTime.TabIndex = 0;
+            this.labelTime.Text = "00:00";
+            // 
+            // timerClock
+            // 
+            this.timerClock.Enabled = true;
+            this.timerClock.Interval = 1000;
+            this.timerClock.Tick += new System.EventHandler(this.timerClock_Tick);
+            // 
+            // buttonloopTest
+            // 
+            this.buttonloopTest.Location = new System.Drawing.Point(128, 264);
+            this.buttonloopTest.Name = "buttonloopTest";
+            this.buttonloopTest.Size = new System.Drawing.Size(96, 64);
+            this.buttonloopTest.TabIndex = 9;
+            this.buttonloopTest.Text = "测试内存泄漏";
+            this.buttonloopTest.UseVisualStyleBackColor = true;
+            this.buttonloopTest.Click += new System.EventHandler(this.buttonloopTest_Click);
+            // 
+            // numericUpDownloopTime
+            // 
+            this.numericUpDownloopTime.Location = new System.Drawing.Point(9, 284);
+            this.numericUpDownloopTime.Name = "numericUpDownloopTime";
+            this.numericUpDownloopTime.Size = new System.Drawing.Size(100, 21);
+            this.numericUpDownloopTime.TabIndex = 10;
+            // 
+            // MainWindowSmall
+            // 
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.ClientSize = new System.Drawing.Size(1200, 700);
+            this.ControlBox = false;
+            this.Controls.Add(this.tabControl);
+            this.Controls.Add(this.panelSide);
+            this.Controls.Add(this.menuStrip);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "MainWindowSmall";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "MainWindow";
+            this.Load += new System.EventHandler(this.MainWindowLoad);
+            this.tabControl.ResumeLayout(false);
+            this.tabHome.ResumeLayout(false);
+            this.panelImgSource.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSource)).EndInit();
+            this.panelImgProcess.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProcessed)).EndInit();
+            this.panelResult.ResumeLayout(false);
+            this.tabControlResult.ResumeLayout(false);
+            this.tabResultData.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDetect)).EndInit();
+            this.tabResultMatter.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDetail)).EndInit();
+            this.tabResultAlarm.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panelStatus.ResumeLayout(false);
+            this.panelProcess.ResumeLayout(false);
+            this.panelProcess.PerformLayout();
+            this.panelstatusDetect.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStatus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProcess)).EndInit();
+            this.panelLocation.ResumeLayout(false);
+            this.panelLocation.PerformLayout();
+            this.panelLocationDetail.ResumeLayout(false);
+            this.panelLocationDetail.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCab)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRom)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFac)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxlocation)).EndInit();
+            this.menuStrip.ResumeLayout(false);
+            this.menuStrip.PerformLayout();
+            this.panelSide.ResumeLayout(false);
+            this.panelLog.ResumeLayout(false);
+            this.panelLog.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLog)).EndInit();
+            this.panelJournal.ResumeLayout(false);
+            this.panelJournal.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxjournal)).EndInit();
+            this.panelClock.ResumeLayout(false);
+            this.panelClock.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownloopTime)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+        private System.Windows.Forms.TabControl tabControl;
+        private System.Windows.Forms.TabPage tabChart;
+        private System.Windows.Forms.TabPage tabSetting;
+        private System.Windows.Forms.TabPage tabInfo;
+        private System.Windows.Forms.MenuStrip menuStrip;
+        private System.Windows.Forms.ToolStripMenuItem 文件FToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 新建NToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 打开OToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
+        private System.Windows.Forms.ToolStripMenuItem 保存SToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 另存为AToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem 打印PToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 打印预览VToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem ExitXToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 编辑EToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 撤消UToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 重复RToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem 剪切TToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 复制CToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 粘贴PToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripMenuItem 全选AToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 工具TToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 选项OToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 帮助HToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 内容CToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 索引IToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 搜索SToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripMenuItem 关于AToolStripMenuItem;
+        private System.Windows.Forms.ImageList imageListTab;
+        private System.Windows.Forms.TabPage tabHome;
+        private System.Windows.Forms.Panel panelImgProcess;
+        private System.Windows.Forms.PictureBox pictureBoxProcessed;
+        private System.Windows.Forms.Panel panelImgSource;
+        private System.Windows.Forms.PictureBox pictureBoxSource;
+        private System.Windows.Forms.Panel panelSide;
+        private System.Windows.Forms.Panel panelClock;
+        private System.Windows.Forms.Label labelTime;
+        private System.Windows.Forms.Label labelWeek;
+        private System.Windows.Forms.Label labelSecond;
+        private System.Windows.Forms.Label labelDate;
+        private System.Windows.Forms.Timer timerClock;
+        private System.Windows.Forms.Panel panelJournal;
+        private System.Windows.Forms.Panel panelResult;
+        private System.Windows.Forms.TabControl tabControlResult;
+        private System.Windows.Forms.TabPage tabResultData;
+        private System.Windows.Forms.TabPage tabResultMatter;
+        private System.Windows.Forms.TabPage tabResultAlarm;
+        private System.Windows.Forms.Panel panelStatus;
+        private System.Windows.Forms.TabPage tabDebug;
+        private System.Windows.Forms.ImageList imageListx32;
+        private System.Windows.Forms.DataGridView dataGridViewDetect;
+        private System.Windows.Forms.DataGridView dataGridViewDetail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumDetailNO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumDetailTime;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumDetailLevel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumDetailInfo;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Panel panelProcess;
+        private System.Windows.Forms.Panel panelLocation;
+        private System.Windows.Forms.Label labelLoca;
+        private System.Windows.Forms.PictureBox pictureBoxlocation;
+        private System.Windows.Forms.Label labelProcess;
+        private System.Windows.Forms.PictureBox pictureBoxProcess;
+        private CircularProgressBar.CircularProgressBar circularProgressBarLocation;
+        private System.Windows.Forms.Panel panelLocationDetail;
+        private System.Windows.Forms.Label labelCab;
+        private System.Windows.Forms.Label labelRom;
+        private System.Windows.Forms.Label labelFac;
+        private System.Windows.Forms.PictureBox pictureBoxCab;
+        private System.Windows.Forms.PictureBox pictureBoxRom;
+        private System.Windows.Forms.PictureBox pictureBoxFac;
+        private CircularProgressBar.CircularProgressBar circularProgressBarprocess;
+        private System.Windows.Forms.Panel panelstatusDetect;
+        private System.Windows.Forms.Label labelbarprocess;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumDetectNO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumDetectTime;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumDetectDevice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumDetectResult;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumDetectAlert;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CloumAlertNO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumAlertTime;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumAlertDevice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumAlertType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumAlertValue;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumAlertLevel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumAlertContent;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumAlertConfirm;
+        private System.Windows.Forms.DataGridView dataGridViewStatus;
+        private System.Windows.Forms.Label labelschedule;
+        private System.Windows.Forms.PictureBox pictureBoxjournal;
+        private System.Windows.Forms.Panel panelLog;
+        private System.Windows.Forms.Label labelJournal;
+        private System.Windows.Forms.PictureBox pictureBoxLog;
+        private ToolStripMenuItem xMLConfigurePlusToolStripMenuItem;
+        private ToolTip toolTip;
+        private Label labelDevNum;
+        private PictureBox pictureBox1;
+        private Button buttonLookUp;
+        private Button buttonTestPic;
+        private ComboBox comboBoxPicNum;
+        private DataGridViewTextBoxColumn ColumDetectName;
+        private DataGridViewTextBoxColumn ColumDetectValue;
+        private ComboBox comboBoxUpdown;
+        private Button buttonloopTest;
+        private NumericUpDown numericUpDownloopTime;
+        //private System.Windows.Forms.Panel panelImgSource;
+        //private System.Windows.Forms.PictureBox pictureBoxSource;
+        //private System.Windows.Forms.Panel panelImgProcess;
+        //private System.Windows.Forms.PictureBox pictureBoxProcess;
+    }
+}
+

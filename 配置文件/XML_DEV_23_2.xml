@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <QRCODE>
+    <startX>0</startX>
+    <startY>0</startY>
+    <width>0</width>
+    <height>0</height>
+    <content></content>
+  </QRCODE>
+  <info>
+    <cabinName>自17 方西 乙</cabinName>
+    <cabinType>出线开关柜</cabinType>
+    <dev_Num>23</dev_Num>
+    <side>FarFace</side>
+    <itemNum>10</itemNum>
+  </info>
+  <device type="2">
+    <name>圆形旋钮</name>
+    <taskinfo>
+      <type>2</type>
+      <subtype>83</subtype>
+      <number>2</number>
+      <order>10</order>
+    </taskinfo>
+    <roiinfo>
+      <startX>760</startX>
+      <startY>801</startY>
+      <distX>760</distX>
+      <distY>801</distY>
+      <width>93</width>
+      <height>102</height>
+    </roiinfo>
+    <unitinfo>
+      <stall>
+        <rangeLow>75</rangeLow>
+        <rangeHigh>105</rangeHigh>
+        <context>试验位置</context>
+      </stall>
+      <stall>
+        <rangeLow>106</rangeLow>
+        <rangeHigh>135</rangeHigh>
+        <context>操作位置</context>
+      </stall>
+    </unitinfo>
+  </device>
+</root>

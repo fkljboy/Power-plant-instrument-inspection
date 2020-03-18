@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DetectGUIPlus
+{
+    // 该类用来定义软件中的各类数据转换
+    class DataFlow
+    {
+        /// <summary>
+        /// 从检测任务列表中获取绘制ROI的数组信息
+        /// </summary>
+        /// <param name="Detectlist">传入检测任务列表</param>
+        /// <param name="roiarray">待绘制ROI信息数组</param>
+        public void GetROIArrayFormDetectList(List<DetectInfo> Detectlist, ref ROIInfo[] roiarray)
+        {
+            for (int i = 0; i < Detectlist.Count; i++)
+            {
+                roiarray[i] = Detectlist[i].ROIINFO;
+            }
+        }
+    }
+}

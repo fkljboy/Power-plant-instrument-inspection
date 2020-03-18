@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <QRCODE>
+    <startX>537</startX>
+    <startY>470</startY>
+    <width>95</width>
+    <height>84</height>
+    <content>009020000000000000058220</content>
+  </QRCODE>
+  <info>
+    <cabinName>2号站用变 10kV</cabinName>
+    <cabinType>站用变</cabinType>
+    <dev_Num>20</dev_Num>
+    <side>FarFace</side>
+    <itemNum>8</itemNum>
+  </info>
+  <device type="2">
+    <name>圆形旋钮</name>
+    <taskinfo>
+      <type>2</type>
+      <subtype>83</subtype>
+      <number>2</number>
+      <order>8</order>
+    </taskinfo>
+    <roiinfo>
+      <startX>843</startX>
+      <startY>672</startY>
+      <distX>306</distX>
+      <distY>202</distY>
+      <width>75</width>
+      <height>89</height>
+    </roiinfo>
+    <unitinfo>
+      <stall>
+        <rangeLow>
+75</rangeLow>
+        <rangeHigh>105</rangeHigh>
+        <context>试验位置</context>
+      </stall>
+      <stall>
+        <rangeLow>106</rangeLow>
+        <rangeHigh>135</rangeHigh>
+        <context>操作位置</context>
+      </stall>
+    </unitinfo>
+  </device>
+</root>

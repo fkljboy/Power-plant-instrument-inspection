@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <QRCODE>
+    <startX>391</startX>
+    <startY>674</startY>
+    <width>87</width>
+    <height>94</height>
+    <content>009020000000000000058252</content>
+  </QRCODE>
+  <info>
+    <cabinName>10kV三（2）/一（1）分段隔离触头</cabinName>
+    <cabinType>分段闸刀</cabinType>
+    <dev_Num>52</dev_Num>
+    <side>NearFace</side>
+    <itemNum>3</itemNum>
+  </info>
+  <device type="3">
+    <name>保护继电器</name>
+    <taskinfo>
+      <type>3</type>
+      <subtype>102</subtype>
+      <number>8</number>
+      <order>1</order>
+    </taskinfo>
+    <roiinfo>
+      <startX>676</startX>
+      <startY>94</startY>
+      <distX>285</distX>
+      <distY>-580</distY>
+      <width>132</width>
+      <height>49</height>
+    </roiinfo>
+  </device>
+  <device type="3">
+    <name>有电显示器</name>
+    <taskinfo>
+      <type>3</type>
+      <subtype>104</subtype>
+      <number>4</number>
+      <order>2</order>
+    </taskinfo>
+    <roiinfo>
+      <startX>392</startX>
+      <startY>466</startY>
+      <distX>1</distX>
+      <distY>-208</distY>
+      <width>141</width>
+      <height>75</height>
+    </roiinfo>
+  </device>
+  <device type="1">
+    <name>连接指示</name>
+    <taskinfo>
+      <type>1</type>
+      <subtype>93</subtype>
+      <number>1</number>
+      <order>3</order>
+    </taskinfo>
+    <roiinfo>
+      <startX>1232</startX>
+      <startY>217</startY>
+      <distX>841</distX>
+      <distY>-457</distY>
+      <width>183</width>
+      <height>368</height>
+    </roiinfo>
+  </device>
+</root>

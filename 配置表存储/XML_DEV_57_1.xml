@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <QRCODE>
+    <startX>434</startX>
+    <startY>683</startY>
+    <width>89</width>
+    <height>87</height>
+    <content>009020000000000000058257</content>
+  </QRCODE>
+  <info>
+    <cabinName>10kV一（1）段 压变/避雷器</cabinName>
+    <cabinType>压变/避雷器柜</cabinType>
+    <dev_Num>57</dev_Num>
+    <side>NearFace</side>
+    <itemNum>4</itemNum>
+  </info>
+  <device type="3">
+    <name>通讯继电器</name>
+    <taskinfo>
+      <type>3</type>
+      <subtype>103</subtype>
+      <number>17</number>
+      <order>1</order>
+    </taskinfo>
+    <roiinfo>
+      <startX>701</startX>
+      <startY>32</startY>
+      <distX>267</distX>
+      <distY>-651</distY>
+      <width>273</width>
+      <height>51</height>
+    </roiinfo>
+  </device>
+  <device type="3">
+    <name>保护继电器</name>
+    <taskinfo>
+      <type>3</type>
+      <subtype>102</subtype>
+      <number>8</number>
+      <order>2</order>
+    </taskinfo>
+    <roiinfo>
+      <startX>609</startX>
+      <startY>128</startY>
+      <distX>175</distX>
+      <distY>-555</distY>
+      <width>117</width>
+      <height>47</height>
+    </roiinfo>
+  </device>
+  <device type="2">
+    <name>段电压联络开关</name>
+    <taskinfo>
+      <type>2</type>
+      <subtype>81</subtype>
+      <number>2</number>
+      <order>3</order>
+    </taskinfo>
+    <roiinfo>
+      <startX>755</startX>
+      <startY>411</startY>
+      <distX>321</distX>
+      <distY>-272</distY>
+      <width>105</width>
+      <height>106</height>
+    </roiinfo>
+    <unitinfo>
+      <stall>
+        <rangeLow>70</rangeLow>
+        <rangeHigh>110</rangeHigh>
+        <context>投入</context>
+      </stall>
+      <stall>
+        <rangeLow>160</rangeLow>
+        <rangeHigh>200</rangeHigh>
+        <context>退出</context>
+      </stall>
+    </unitinfo>
+  </device>
+  <device type="1">
+    <name>连接指示</name>
+    <taskinfo>
+      <type>1</type>
+      <subtype>93</subtype>
+      <number>1</number>
+      <order>4</order>
+    </taskinfo>
+    <roiinfo>
+      <startX>996</startX>
+      <startY>248</startY>
+      <distX>562</distX>
+      <distY>-435</distY>
+      <width>222</width>
+      <height>342</height>
+    </roiinfo>
+  </device>
+</root>

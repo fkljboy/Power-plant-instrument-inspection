@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <QRCODE>
+    <startX>344</startX>
+    <startY>474</startY>
+    <width>97</width>
+    <height>88</height>
+    <content>009020000000000000058217</content>
+  </QRCODE>
+  <info>
+    <cabinName>10KV 2号电容器</cabinName>
+    <cabinType>电容器柜</cabinType>
+    <dev_Num>17</dev_Num>
+    <side>FarFace</side>
+    <itemNum>8</itemNum>
+  </info>
+  <device type="2">
+    <name>圆形旋钮</name>
+    <taskinfo>
+      <type>2</type>
+      <subtype>83</subtype>
+      <number>2</number>
+      <order>8</order>
+    </taskinfo>
+    <roiinfo>
+      <startX>656</startX>
+      <startY>687</startY>
+      <distX>312</distX>
+      <distY>213</distY>
+      <width>75</width>
+      <height>81</height>
+    </roiinfo>
+    <unitinfo>
+      <stall>
+        <rangeLow>75</rangeLow>
+        <rangeHigh>105</rangeHigh>
+        <context>试验位置</context>
+      </stall>
+      <stall>
+        <rangeLow>106</rangeLow>
+        <rangeHigh>135</rangeHigh>
+        <context>操作位置</context>
+      </stall>
+    </unitinfo>
+  </device>
+</root>

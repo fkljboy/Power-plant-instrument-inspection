@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <QRCODE>
+    <startX>399</startX>
+    <startY>452</startY>
+    <width>97</width>
+    <height>81</height>
+    <content>009020000000000000058236</content>
+  </QRCODE>
+  <info>
+    <cabinName>自25 马太 乙</cabinName>
+    <cabinType>出线开关柜</cabinType>
+    <dev_Num>36</dev_Num>
+    <side>FarFace</side>
+    <itemNum>10</itemNum>
+  </info>
+</root>

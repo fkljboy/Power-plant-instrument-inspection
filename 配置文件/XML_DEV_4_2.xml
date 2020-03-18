@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <QRCODE>
+    <startX>334</startX>
+    <startY>476</startY>
+    <width>90</width>
+    <height>83</height>
+    <content>009020000000000000058204</content>
+  </QRCODE>
+  <info>
+    <cabinName>自8 马建/自38 庄忠 甲</cabinName>
+    <cabinType>出线开关柜</cabinType>
+    <dev_Num>4</dev_Num>
+    <side>FarFace</side>
+    <itemNum>10</itemNum>
+  </info>
+  <device type="2">
+    <name>圆形旋钮</name>
+    <taskinfo>
+      <type>2</type>
+      <subtype>83</subtype>
+      <number>2</number>
+      <order>10</order>
+    </taskinfo>
+    <roiinfo>
+      <startX>709</startX>
+      <startY>681</startY>
+      <distX>313</distX>
+      <distY>212</distY>
+      <width>103</width>
+      <height>97</height>
+    </roiinfo>
+    <unitinfo>
+      <stall>
+        <rangeLow>75</rangeLow>
+        <rangeHigh>105</rangeHigh>
+        <context>试验位置</context>
+      </stall>
+      <stall>
+        <rangeLow>106</rangeLow>
+        <rangeHigh>135</rangeHigh>
+        <context>操作位置</context>
+      </stall>
+    </unitinfo>
+  </device>
+</root>

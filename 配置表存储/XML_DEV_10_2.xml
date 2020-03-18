@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <QRCODE>
+    <startX>430</startX>
+    <startY>742</startY>
+    <width>89</width>
+    <height>88</height>
+    <content>009020000000000000058210</content>
+  </QRCODE>
+  <info>
+    <cabinName>10kV一（2）/二（1）分段隔离触头</cabinName>
+    <cabinType>分段闸刀</cabinType>
+    <dev_Num>10</dev_Num>
+    <side>FarFace</side>
+    <itemNum>3</itemNum>
+  </info>
+</root>

@@ -1,0 +1,196 @@
+﻿  dllmain.cpp
+  StateGridDLL.cpp
+e:\documents\svn\stategrid\tempdll\stategriddll\stategriddll.cpp(308): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+  sgtask_qrcode.cpp
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_qrcode.cpp(147): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_qrcode.cpp(151): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_qrcode.cpp(159): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_qrcode.cpp(160): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+  sgtask_pointer.cpp
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_pointer.cpp(273): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_pointer.cpp(274): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_pointer.cpp(287): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_pointer.cpp(335): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_pointer.cpp(415): warning C4244: “初始化”: 从“std::size_t”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_pointer.cpp(426): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_pointer.cpp(483): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+  sgtask_led.cpp
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(264): warning C4305: “参数”: 从“double”到“float”截断
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(269): warning C4305: “参数”: 从“double”到“float”截断
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(283): warning C4305: “参数”: 从“double”到“float”截断
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(288): warning C4305: “参数”: 从“double”到“const float”截断
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(368): warning C4305: “参数”: 从“double”到“float”截断
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(386): warning C4305: “参数”: 从“double”到“float”截断
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(391): warning C4305: “参数”: 从“double”到“float”截断
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(406): warning C4305: “参数”: 从“double”到“float”截断
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(415): warning C4305: “参数”: 从“double”到“float”截断
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(512): warning C4305: “参数”: 从“double”到“float”截断
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(516): warning C4305: “参数”: 从“double”到“float”截断
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(530): warning C4305: “参数”: 从“double”到“float”截断
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(535): warning C4305: “参数”: 从“double”到“float”截断
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(547): warning C4305: “参数”: 从“double”到“const float”截断
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(547): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(555): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(845): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(846): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(858): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(859): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(912): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(916): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(921): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(925): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(926): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(933): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(1081): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(1144): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(1145): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(1345): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(1350): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(1390): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(1391): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(1450): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(1531): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(1579): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(1908): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(1916): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(1925): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(1933): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(1982): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(1988): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(2005): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(2011): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(2114): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(2117): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(2257): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(2258): warning C4244: “参数”: 从“const float”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(2288): warning C4244: “=”: 从“double”转换到“uchar”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(2302): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(2310): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(2465): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(2466): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_led.cpp(2468): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+  sgtask_knob.cpp
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_knob.cpp(176): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_knob.cpp(235): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_knob.cpp(408): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_knob.cpp(599): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_knob.cpp(1043): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_knob.cpp(1044): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_knob.cpp(1045): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_knob.cpp(1079): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_knob.cpp(1139): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_knob.cpp(1426): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_knob.cpp(1428): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_knob.cpp(1467): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_knob.cpp(1470): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_knob.cpp(1471): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_knob.cpp(1496): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_knob.cpp(1510): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_knob.cpp(1541): warning C4244: “参数”: 从“double”转换到“const int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_knob.cpp(1673): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_knob.cpp(1674): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_knob.cpp(1680): warning C4305: “=”: 从“double”到“float”截断
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_knob.cpp(1684): warning C4305: “=”: 从“double”到“float”截断
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_knob.cpp(1688): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_knob.cpp(1692): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_knob.cpp(1693): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_knob.cpp(1702): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_knob.cpp(1705): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+  sgtask_analog.cpp
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(289): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(290): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(517): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(522): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(646): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(647): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(682): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(687): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(707): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(713): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(736): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(791): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(797): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(826): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(832): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(849): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(927): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(933): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(951): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(1038): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(1043): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(1157): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(1162): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(1182): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(1188): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(1211): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(1224): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(1230): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(1258): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(1264): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(1282): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(1368): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(1373): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(1486): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(1491): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(1511): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(1517): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(1540): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(1596): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(1601): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(1739): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(1766): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(1803): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(1809): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(1827): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(1917): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(1923): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\sgtask_analog.cpp(1941): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  ImageDeal.cpp
+  DealImageUtil.cpp
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\dealimageutil.cpp(85): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\dealimageutil.cpp(102): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\dealimageutil.cpp(103): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\dealimageutil.cpp(104): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\dealimageutil.cpp(105): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\dealimageutil.cpp(111): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\dealimageutil.cpp(139): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\dealimageutil.cpp(173): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\dealimageutil.cpp(174): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\dealimageutil.cpp(177): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\dealimageutil.cpp(178): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\dealimageutil.cpp(180): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\dealimageutil.cpp(192): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\dealimageutil.cpp(210): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\dealimageutil.cpp(211): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\dealimageutil.cpp(214): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\dealimageutil.cpp(215): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\dealimageutil.cpp(217): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\dealimageutil.cpp(227): warning C4244: “*=”: 从“double”转换到“float”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgtask\dealimageutil.cpp(228): warning C4244: “*=”: 从“double”转换到“float”，可能丢失数据
+  tinyxml2.cpp
+  sgfunc_transform.cpp
+e:\documents\svn\stategrid\tempdll\stategriddll\sgfunction\sgfunc_transform.cpp(75): warning C4018: “<”: 有符号/无符号不匹配
+e:\documents\svn\stategrid\tempdll\stategriddll\sgfunction\sgfunc_transform.cpp(77): warning C4018: “<”: 有符号/无符号不匹配
+  sgfunc_imageio.cpp
+  sgfunc_file.cpp
+e:\documents\svn\stategrid\tempdll\stategriddll\sgfunction\sgfunc_file.cpp(44): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  sgfunc_feature.cpp
+e:\documents\svn\stategrid\tempdll\stategriddll\sgfunction\sgfunc_feature.cpp(350): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\documents\svn\stategrid\tempdll\stategriddll\sgfunction\sgfunc_feature.cpp(351): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+  sgcore_taskinfo.cpp
+  sgcore_safetyCheck.cpp
+  sgcore_log.cpp
+  sgApplication.cpp
+  正在生成代码...
+e:\documents\svn\stategrid\tempdll\stategriddll\sgfunction\sgfunc_feature.cpp(379): warning C4715: “imageMatch”: 不是所有的控件路径都返回值
+    正在创建库 E:\Documents\SVN\StateGrid\tempDLL\x64\Debug\StateGridDLL.lib 和对象 E:\Documents\SVN\StateGrid\tempDLL\x64\Debug\StateGridDLL.exp
+glogd.lib(demangle.obj) : warning LNK4099: 未找到 PDB“glog.pdb”(使用“glogd.lib(demangle.obj)”或在“E:\Documents\SVN\StateGrid\tempDLL\x64\Debug\glog.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+glogd.lib(logging.obj) : warning LNK4099: 未找到 PDB“glog.pdb”(使用“glogd.lib(logging.obj)”或在“E:\Documents\SVN\StateGrid\tempDLL\x64\Debug\glog.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+glogd.lib(raw_logging.obj) : warning LNK4099: 未找到 PDB“glog.pdb”(使用“glogd.lib(raw_logging.obj)”或在“E:\Documents\SVN\StateGrid\tempDLL\x64\Debug\glog.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+glogd.lib(symbolize.obj) : warning LNK4099: 未找到 PDB“glog.pdb”(使用“glogd.lib(symbolize.obj)”或在“E:\Documents\SVN\StateGrid\tempDLL\x64\Debug\glog.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+glogd.lib(utilities.obj) : warning LNK4099: 未找到 PDB“glog.pdb”(使用“glogd.lib(utilities.obj)”或在“E:\Documents\SVN\StateGrid\tempDLL\x64\Debug\glog.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+glogd.lib(vlog_is_on.obj) : warning LNK4099: 未找到 PDB“glog.pdb”(使用“glogd.lib(vlog_is_on.obj)”或在“E:\Documents\SVN\StateGrid\tempDLL\x64\Debug\glog.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+glogd.lib(signalhandler.obj) : warning LNK4099: 未找到 PDB“glog.pdb”(使用“glogd.lib(signalhandler.obj)”或在“E:\Documents\SVN\StateGrid\tempDLL\x64\Debug\glog.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+glogd.lib(port.obj) : warning LNK4099: 未找到 PDB“glog.pdb”(使用“glogd.lib(port.obj)”或在“E:\Documents\SVN\StateGrid\tempDLL\x64\Debug\glog.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+  StateGridDLL.vcxproj -> E:\Documents\SVN\StateGrid\tempDLL\x64\Debug\StateGridDLL.dll
+  StateGridDLL.vcxproj -> E:\Documents\SVN\StateGrid\tempDLL\x64\Debug\StateGridDLL.pdb (Full PDB)
